@@ -10,5 +10,11 @@ describe('the Note module', () => {
     note.execute({add : 'note'});
     expect(console.log).toHaveBeenCalled();
   });
+  it('random() check for valid method console it', () =>{
+
+    const note = new Note();
+    note.random({});
+    expect(console.log).toHaveBeenCalled();
+  });
 
 });

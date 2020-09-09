@@ -18,11 +18,11 @@ it('checknote() will check if the it is validated',()=>{
 })
 it('checkMethod() will check if the it is validated',()=>{
     let test = new Input();
-    expect(test.checknote('--add')).toEqual('--add');
+    expect(test.checkMethod('--add')).toEqual('--add');
 })
 it('checkMethod() will check if the it is validated',()=>{
     let test = new Input();
-    expect(test.checknote('-a')).toEqual('-a');
+    expect(test.checkMethod('-a')).toEqual('-a');
 })
 
 })

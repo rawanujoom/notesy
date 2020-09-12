@@ -18,6 +18,6 @@ describe('the Note module', () => {
   //   note.random({});
   //   expect(console.log).toHaveBeenCalled();
   // });
-  
+
 
 });

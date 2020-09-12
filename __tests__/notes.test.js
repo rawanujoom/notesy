@@ -1,20 +1,23 @@
 'use strict';
 const Note = require('../lib/notes.js');
+require('@code-fellows/supergoose');
+
 jest.spyOn(global.console, 'log');
 
 describe('the Note module', () => {
 
-  it('execute() check for valid method console it', () =>{
+  it('execute() check for valid method console it', () => {
 
     const note = new Note();
-    note.execute({add : 'note'});
+    note.execute({ add: 'note' });
     expect(console.log).toHaveBeenCalled();
   });
-  it('random() check for valid method console it', () =>{
+  // it('random() check for valid method console it', () =>{
 
-    const note = new Note();
-    note.random({});
-    expect(console.log).toHaveBeenCalled();
-  });
+  //   const note = new Note();
+  //   note.random({});
+  //   expect(console.log).toHaveBeenCalled();
+  // });
+  
 
 });

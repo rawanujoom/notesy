@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Hussein-401-advanced-javascript/Notesy#readme",
   "dependencies": {
+    "@code-fellows/supergoose": "^1.0.11",
     "eslint": "^7.8.1",
     "minimist": "^1.2.5",
     "mongoose": "^5.10.3",

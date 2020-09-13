@@ -10,16 +10,9 @@
     "test": "jest --verbose --coverage",
     "lint": "eslint '**/*.js'"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Hussein-401-advanced-javascript/Notesy.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Hussein-401-advanced-javascript/Notesy/issues"
-  },
   "homepage": "https://github.com/Hussein-401-advanced-javascript/Notesy#readme",
   "dependencies": {
     "@code-fellows/supergoose": "^1.0.11",

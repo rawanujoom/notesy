@@ -2,22 +2,23 @@
 const Note = require('../lib/notes.js');
 require('@code-fellows/supergoose');
 
-jest.spyOn(global.console, 'log');
+const note = new Note();
+
+jest.spyOn(note, 'add');
 
 describe('the Note module', () => {
 
-  it('execute() check for valid method console it', () => {
-
-    const note = new Note();
-    note.execute({ add: 'note' });
-    expect(console.log).toHaveBeenCalled();
+  it('execute() check for valid method console it', async () => {
+   
+    note.execute({ 
+      method: 'add',
+      note: 'testing',
+      categoryDesc: 'watch'}).then(result=> {
+        expect(note.add).toHaveBeenCalled();
+      }).catch(err=> {
+        console.log("err>>> ",err)
+      });
+      
   });
-  // it('random() check for valid method console it', () =>{
-
-  //   const note = new Note();
-  //   note.random({});
-  //   expect(console.log).toHaveBeenCalled();
-  // });
-
 
 });
